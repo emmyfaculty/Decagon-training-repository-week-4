@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.emmanuel</OriginalElement>
+  <nodes>
+    <node x="207.96828901257447" y="771.0">com.emmanuel.User</node>
+    <node x="347.6436456400743" y="1129.0">com.emmanuel.CustomerOrder</node>
+    <node x="752.6436456400743" y="732.0">com.emmanuel.StoreSales</node>
+    <node x="0.0" y="437.5">com.emmanuel.Roles</node>
+    <node x="11.468645640074214" y="1193.5">com.emmanuel.StoreHire</node>
+    <node x="581.6436456400743" y="412.0">com.emmanuel.StoreStock</node>
+    <node x="313.2182890125745" y="489.5">com.emmanuel.Wallet</node>
+    <node x="590.3440878169447" y="0.0">com.emmanuel.Product</node>
+    <node x="340.8936456400743" y="1504.0">com.emmanuel.Main</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.emmanuel.Main" target="com.emmanuel.StoreHire">
+      <point x="-72.72727272727275" y="-32.0" />
+      <point x="368.16637291280153" y="1474.0" />
+      <point x="83.46864564007421" y="1474.0" />
+      <point x="-72.0" y="83.0" />
+    </edge>
+    <edge source="com.emmanuel.StoreHire" target="com.emmanuel.User">
+      <point x="96.0" y="-83.0" />
+      <point x="251.46864564007421" y="1109.0" />
+      <point x="231.76828901257448" y="1109.0" />
+      <point x="-95.19999999999999" y="134.5" />
+    </edge>
+    <edge source="com.emmanuel.Main" target="com.emmanuel.StoreStock">
+      <point x="36.363636363636374" y="-32.0" />
+      <point x="477.25728200371066" y="1454.0" />
+      <point x="731.1436456400743" y="1454.0" />
+      <point x="731.1436456400743" y="712.0" />
+      <point x="677.7150742115028" y="712.0" />
+      <point x="-38.428571428571445" y="135.0" />
+    </edge>
+    <edge source="com.emmanuel.Main" target="com.emmanuel.Roles">
+      <point x="-90.90909090909093" y="-32.0" />
+      <point x="349.98455473098335" y="1484.0" />
+      <point x="0.9686456400742145" y="1484.0" />
+      <point x="0.9686456400742145" y="712.0" />
+      <point x="21.799999999999955" y="712.0" />
+      <point x="-87.20000000000005" y="109.5" />
+    </edge>
+    <edge source="com.emmanuel.StoreSales" target="com.emmanuel.StoreStock">
+      <point x="-102.28571428571422" y="-173.5" />
+      <point x="829.3579313543601" y="712.0" />
+      <point x="793.0007884972171" y="712.0" />
+      <point x="76.85714285714278" y="135.0" />
+    </edge>
+    <edge source="com.emmanuel.StoreSales" target="com.emmanuel.Product">
+      <point x="0.0" y="-173.5" />
+      <point x="931.6436456400743" y="712.0" />
+      <point x="967.6997062461346" y="712.0" />
+      <point x="967.6997062461346" y="382.0" />
+      <point x="807.8440878169447" y="382.0" />
+      <point x="58.0" y="161.0" />
+    </edge>
+    <edge source="com.emmanuel.CustomerOrder" target="com.emmanuel.StoreSales">
+      <point x="165.77777777777783" y="-147.5" />
+      <point x="699.9214234178521" y="1109.0" />
+      <point x="812.3103123067409" y="1109.0" />
+      <point x="-119.33333333333337" y="173.5" />
+    </edge>
+    <edge source="com.emmanuel.CustomerOrder" target="com.emmanuel.StoreStock">
+      <point x="124.33333333333337" y="-147.5" />
+      <point x="658.4769789734077" y="1099.0" />
+      <point x="611.7238095238096" y="1099.0" />
+      <point x="611.7238095238096" y="712.0" />
+      <point x="639.2865027829314" y="712.0" />
+      <point x="-76.85714285714289" y="135.0" />
+    </edge>
+    <edge source="com.emmanuel.CustomerOrder" target="com.emmanuel.Product">
+      <point x="-41.44444444444446" y="-147.5" />
+      <point x="492.6992011956298" y="1109.0" />
+      <point x="526.3996433725002" y="1109.0" />
+      <point x="526.3996433725002" y="352.0" />
+      <point x="633.8440878169447" y="352.0" />
+      <point x="-116.0" y="161.0" />
+    </edge>
+    <edge source="com.emmanuel.CustomerOrder" target="com.emmanuel.User">
+      <point x="-124.33333333333337" y="-147.5" />
+      <point x="409.8103123067409" y="1109.0" />
+      <point x="422.16828901257446" y="1109.0" />
+      <point x="95.19999999999999" y="134.5" />
+    </edge>
+    <edge source="com.emmanuel.Main" target="com.emmanuel.StoreSales">
+      <point x="72.72727272727275" y="-32.0" />
+      <point x="513.620918367347" y="1474.0" />
+      <point x="967.6997062461346" y="1474.0" />
+      <point x="967.6997062461346" y="1109.0" />
+      <point x="931.6436456400743" y="1109.0" />
+      <point x="0.0" y="173.5" />
+    </edge>
+    <edge source="com.emmanuel.StoreHire" target="com.emmanuel.Roles">
+      <point x="0.0" y="-83.0" />
+      <point x="155.46864564007421" y="1109.0" />
+      <point x="140.91302721088425" y="1109.0" />
+      <point x="140.91302721088425" y="712.0" />
+      <point x="109.0" y="712.0" />
+      <point x="0.0" y="109.5" />
+    </edge>
+    <edge source="com.emmanuel.User" target="com.emmanuel.Roles">
+      <point x="-29.75" y="-134.5" />
+      <point x="297.2182890125745" y="702.0" />
+      <point x="196.19999999999993" y="702.0" />
+      <point x="87.19999999999996" y="109.5" />
+    </edge>
+    <edge source="com.emmanuel.User" target="com.emmanuel.Wallet">
+      <point x="29.75" y="-134.5" />
+      <point x="-43.5" y="57.5" />
+    </edge>
+    <edge source="com.emmanuel.Main" target="com.emmanuel.CustomerOrder">
+      <point x="18.181818181818187" y="-32.0" />
+      <point x="459.07546382189247" y="1444.0" />
+      <point x="627.3936456400743" y="1444.0" />
+      <point x="93.25" y="147.5" />
+    </edge>
+    <edge source="com.emmanuel.Main" target="com.emmanuel.User">
+      <point x="-36.363636363636374" y="-32.0" />
+      <point x="404.5300092764379" y="1454.0" />
+      <point x="309.9686456400742" y="1454.0" />
+      <point x="309.9686456400742" y="1109.0" />
+      <point x="279.36828901257445" y="1109.0" />
+      <point x="-47.60000000000002" y="134.5" />
+    </edge>
+    <edge source="com.emmanuel.StoreStock" target="com.emmanuel.Product">
+      <point x="89.66666666666663" y="-135.0" />
+      <point x="805.8103123067409" y="392.0" />
+      <point x="778.8440878169447" y="392.0" />
+      <point x="29.0" y="161.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.3777078085642317" x="555.5" y="784.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
