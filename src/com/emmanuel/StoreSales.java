@@ -9,6 +9,10 @@ public class StoreSales extends StoreStock {
     private Product customerCart;
     private CopyOnWriteArrayList<Product> allOrders;
     private LinkedList<Product> orderList;
+
+    public StoreSales() {
+    }
+
     static final Comparator<Product> QUANTITY_WISE = new Comparator<Product>() {
         @Override
         public int compare(Product product1, Product product2) {
@@ -23,12 +27,6 @@ public class StoreSales extends StoreStock {
             return result;
         }
     };
-
-
-
-
-
-
 
 
 
@@ -90,7 +88,7 @@ public class StoreSales extends StoreStock {
         }
         else {
             output =
-                    "\t" + "\t" + "    koorius store" + "\t" + "\t" + "\n" +
+                    "\t" + "\t" + "    Emaco store" + "\t" + "\t" + "\n" +
                             "\t" + "    Plot 24,Jericho hills" + "\t" + "\n" +
                             "\t" + "       Clements Island" + "\t" + "\n" +
                             "* * * thanks for shopping with us * * *" + "\n" + "\n" +

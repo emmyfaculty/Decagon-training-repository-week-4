@@ -5,9 +5,12 @@ import java.util.*;
 
 public class CustomerOrder {
     private User customer;
-    private StoreStock stock;
+    private StoreStock stock = new StoreStock();
     private ArrayList<Product> cart;
-  //  static final Comparator<Product> QUANTITY_ORDER = new Comparator<Product>() {
+
+    public CustomerOrder() {
+    }
+    //  static final Comparator<Product> QUANTITY_ORDER = new Comparator<Product>() {
 //        @Override
 //        public int compare(Product product1, Product product2) {
 //            int result = 0;
@@ -45,23 +48,33 @@ public class CustomerOrder {
      /* @param quantity
      * this method uses getMatchIndex to check the availability of the product,
      * then create a Product object with the return value
-     * then checks for sufficient balance and quantity
+     *
      * finally adds a new aproduct object into the cart
      */
 
-    public void addToCart (String product, int quantity) {
-        int index = stock.getMatchIndex(product);
-        if (index >= 0) {
-            Product newPro = stock.getInventories().get(index);
-            if(customer.getBalance() >= (quantity * newPro.getPrice()) && quantity <= newPro.getQuantity()) {
-                cart.add(new Product(newPro.getCategory(), product, quantity, newPro.getPrice()));
-                //System.out.println(cart);
+    public synchronized String addToCart (User user,String product, int quantity) {
+
+        String message ="";
+        if(user.getRole() == Roles.CUSTOMER) {
+            int index = stock.getMatchIndex(product);
+            if (index >= 0) {
+                Product newPro = stock.getInventories().get(index);
+                if(quantity <= newPro.getQuantity()) {
+                    cart.add(new Product(newPro.getCategory(), product, quantity, newPro.getPrice()));
+                    message = "Hello "+ user.getName()+" " +quantity+" quantities of "+ product + " Has been added to your cart";
+
+                }
+                else message = "Out of stock";
             }
-            else System.out.println("insufficient funds or product out of stock");
+            else {
+                message = "Product not available";
+            }
+        } else {
+            message= " Pls Kindly switch to our customer role to use this feature.";
         }
-        else {
-            System.out.println("Product not available");
-        }
+
+
+        return  message;
 
     }
 
